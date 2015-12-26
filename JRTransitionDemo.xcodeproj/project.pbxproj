@@ -13,6 +13,9 @@
 		340A41851C2E2BDC00839D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340A41831C2E2BDC00839D67 /* Main.storyboard */; };
 		340A41871C2E2BDC00839D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340A41861C2E2BDC00839D67 /* Assets.xcassets */; };
 		340A418A1C2E2BDC00839D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340A41881C2E2BDC00839D67 /* LaunchScreen.storyboard */; };
+		340A41961C2E2DF900839D67 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41951C2E2DF900839D67 /* PushViewController.m */; };
+		340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41981C2E2E0700839D67 /* PresentViewController.m */; };
+		340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419B1C2E480A00839D67 /* JRPushTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		340A41861C2E2BDC00839D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		340A41891C2E2BDC00839D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		340A418B1C2E2BDC00839D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340A41941C2E2DF900839D67 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		340A41951C2E2DF900839D67 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		340A41971C2E2E0700839D67 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		340A41981C2E2E0700839D67 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		340A419A1C2E480A00839D67 /* JRPushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPushTransition.h; sourceTree = "<group>"; };
+		340A419B1C2E480A00839D67 /* JRPushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPushTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +67,9 @@
 		340A41791C2E2BDC00839D67 /* JRTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				340A417D1C2E2BDC00839D67 /* AppDelegate.h */,
-				340A417E1C2E2BDC00839D67 /* AppDelegate.m */,
-				340A41801C2E2BDC00839D67 /* ViewController.h */,
-				340A41811C2E2BDC00839D67 /* ViewController.m */,
-				340A41831C2E2BDC00839D67 /* Main.storyboard */,
-				340A41861C2E2BDC00839D67 /* Assets.xcassets */,
-				340A41881C2E2BDC00839D67 /* LaunchScreen.storyboard */,
-				340A418B1C2E2BDC00839D67 /* Info.plist */,
+				340A41911C2E2DAF00839D67 /* Classes */,
+				340A41921C2E2DC000839D67 /* PushController */,
+				340A41931C2E2DCE00839D67 /* PresentController */,
 				340A417A1C2E2BDC00839D67 /* Supporting Files */,
 			);
 			path = JRTransitionDemo;
@@ -74,9 +78,44 @@
 		340A417A1C2E2BDC00839D67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				340A41831C2E2BDC00839D67 /* Main.storyboard */,
+				340A41861C2E2BDC00839D67 /* Assets.xcassets */,
+				340A41881C2E2BDC00839D67 /* LaunchScreen.storyboard */,
+				340A418B1C2E2BDC00839D67 /* Info.plist */,
 				340A417B1C2E2BDC00839D67 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		340A41911C2E2DAF00839D67 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				340A417D1C2E2BDC00839D67 /* AppDelegate.h */,
+				340A417E1C2E2BDC00839D67 /* AppDelegate.m */,
+				340A41801C2E2BDC00839D67 /* ViewController.h */,
+				340A41811C2E2BDC00839D67 /* ViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		340A41921C2E2DC000839D67 /* PushController */ = {
+			isa = PBXGroup;
+			children = (
+				340A41941C2E2DF900839D67 /* PushViewController.h */,
+				340A41951C2E2DF900839D67 /* PushViewController.m */,
+				340A419A1C2E480A00839D67 /* JRPushTransition.h */,
+				340A419B1C2E480A00839D67 /* JRPushTransition.m */,
+			);
+			name = PushController;
+			sourceTree = "<group>";
+		};
+		340A41931C2E2DCE00839D67 /* PresentController */ = {
+			isa = PBXGroup;
+			children = (
+				340A41971C2E2E0700839D67 /* PresentViewController.h */,
+				340A41981C2E2E0700839D67 /* PresentViewController.m */,
+			);
+			name = PresentController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */,
+				340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */,
 				340A41821C2E2BDC00839D67 /* ViewController.m in Sources */,
 				340A417F1C2E2BDC00839D67 /* AppDelegate.m in Sources */,
+				340A41961C2E2DF900839D67 /* PushViewController.m in Sources */,
 				340A417C1C2E2BDC00839D67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JRTransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = clib.sariel.lijin.JRTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JRTransitionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = clib.sariel.lijin.JRTransitionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

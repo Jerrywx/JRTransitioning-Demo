@@ -6,8 +6,8 @@
 //  Copyright © 2015年 wxiao. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface JRPushTransition : NSObject
+@interface JRPushTransition : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end

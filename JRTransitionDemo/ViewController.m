@@ -13,16 +13,21 @@
 #import "JRPopTransition.h"
 #import "JRPresentAnimation.h"
 #import "JRDismissAnimation.h"
+#import "JRInteractiveTransition.h"
+#import "JRPopInteractiveTransition.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate,
 								UINavigationControllerDelegate, UIViewControllerTransitioningDelegate,
 								PresentViewControllerDelegate>
-@property (nonatomic, strong) UITableView			*tableView;
-@property (nonatomic, strong) JRPushTransition		*pushTransition;
-@property (nonatomic, strong) JRPopTransition		*popTransition;
+@property (nonatomic, strong) UITableView					*tableView;
+@property (nonatomic, strong) JRPushTransition				*pushTransition;
+@property (nonatomic, strong) JRPopTransition				*popTransition;
 
-@property (nonatomic, strong) JRPresentAnimation	*presentAnimation;
-@property (nonatomic, strong) JRDismissAnimation	*dismissAnimateion;
+@property (nonatomic, strong) JRPresentAnimation			*presentAnimation;
+@property (nonatomic, strong) JRDismissAnimation			*dismissAnimateion;
+
+@property (nonatomic, strong) JRInteractiveTransition		*interactiveTransition;
+@property (nonatomic, strong) JRPopInteractiveTransition	*popInteractiveTransition;
 @end
 
 @implementation ViewController
@@ -64,12 +69,14 @@
 		self.navigationController.delegate = self;
 		
 		PushViewController *push = [[PushViewController alloc] init];
+		[self.popInteractiveTransition addPopGesture:push];
 		[self.navigationController pushViewController:push animated:YES];
 	} else if (indexPath.row == 1) {
 		PresentViewController *present = [[PresentViewController alloc] init];
 		present.delegate = self;
 		present.transitioningDelegate = self;
 		present.modalPresentationStyle = UIModalPresentationCustom;
+		[self.interactiveTransition wireToViewController:present];
 		[self presentViewController:present animated:YES completion:nil];
 	}
 }
@@ -100,6 +107,11 @@
 	NSLog(@"did Show");
 }
 
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController {
+	return self.popInteractiveTransition.interacting ? self.popInteractiveTransition : nil;
+	return nil;
+}
+
 #pragma mark - UIViewControllerTransitioningDelegate
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
 																  presentingController:(UIViewController *)presenting
@@ -122,6 +134,7 @@
 
 - (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
 	NSLog(@"inter Dismiss");
+	return self.interactiveTransition.interacting ? self.interactiveTransition : nil;
 	return nil;
 }
 
@@ -167,6 +180,22 @@
 		return _dismissAnimateion;
 	}
 	return _dismissAnimateion = [[JRDismissAnimation alloc] init];
+}
+
+- (JRInteractiveTransition *)interactiveTransition {
+	
+	if (_interactiveTransition) {
+		return _interactiveTransition;
+	}
+	return _interactiveTransition = [[JRInteractiveTransition alloc] init];
+}
+
+- (JRPopInteractiveTransition *)popInteractiveTransition {
+	if (_popInteractiveTransition) {
+		return _popInteractiveTransition;
+	}
+	
+	return _popInteractiveTransition = [[JRPopInteractiveTransition alloc] init];
 }
 
 @end

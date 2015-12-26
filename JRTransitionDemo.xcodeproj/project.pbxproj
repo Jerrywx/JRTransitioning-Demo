@@ -19,6 +19,8 @@
 		340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419E1C2E586400839D67 /* JRPopTransition.m */; };
 		340A41A21C2E94A800839D67 /* JRPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A11C2E94A800839D67 /* JRPresentAnimation.m */; };
 		340A41A51C2E951D00839D67 /* JRDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A41C2E951D00839D67 /* JRDismissAnimation.m */; };
+		340A41A81C2EC04600839D67 /* JRInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A71C2EC04600839D67 /* JRInteractiveTransition.m */; };
+		340A41AB1C2ED2AD00839D67 /* JRPopInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41AA1C2ED2AD00839D67 /* JRPopInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,10 @@
 		340A41A11C2E94A800839D67 /* JRPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPresentAnimation.m; sourceTree = "<group>"; };
 		340A41A31C2E951D00839D67 /* JRDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDismissAnimation.h; sourceTree = "<group>"; };
 		340A41A41C2E951D00839D67 /* JRDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDismissAnimation.m; sourceTree = "<group>"; };
+		340A41A61C2EC04600839D67 /* JRInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRInteractiveTransition.h; sourceTree = "<group>"; };
+		340A41A71C2EC04600839D67 /* JRInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRInteractiveTransition.m; sourceTree = "<group>"; };
+		340A41A91C2ED2AD00839D67 /* JRPopInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopInteractiveTransition.h; sourceTree = "<group>"; };
+		340A41AA1C2ED2AD00839D67 /* JRPopInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopInteractiveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,8 @@
 				340A419B1C2E480A00839D67 /* JRPushTransition.m */,
 				340A419D1C2E586400839D67 /* JRPopTransition.h */,
 				340A419E1C2E586400839D67 /* JRPopTransition.m */,
+				340A41A91C2ED2AD00839D67 /* JRPopInteractiveTransition.h */,
+				340A41AA1C2ED2AD00839D67 /* JRPopInteractiveTransition.m */,
 			);
 			name = PushController;
 			sourceTree = "<group>";
@@ -129,6 +137,8 @@
 				340A41A11C2E94A800839D67 /* JRPresentAnimation.m */,
 				340A41A31C2E951D00839D67 /* JRDismissAnimation.h */,
 				340A41A41C2E951D00839D67 /* JRDismissAnimation.m */,
+				340A41A61C2EC04600839D67 /* JRInteractiveTransition.h */,
+				340A41A71C2EC04600839D67 /* JRInteractiveTransition.m */,
 			);
 			name = PresentController;
 			sourceTree = "<group>";
@@ -208,6 +218,8 @@
 				340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */,
 				340A41821C2E2BDC00839D67 /* ViewController.m in Sources */,
 				340A41A21C2E94A800839D67 /* JRPresentAnimation.m in Sources */,
+				340A41A81C2EC04600839D67 /* JRInteractiveTransition.m in Sources */,
+				340A41AB1C2ED2AD00839D67 /* JRPopInteractiveTransition.m in Sources */,
 				340A417F1C2E2BDC00839D67 /* AppDelegate.m in Sources */,
 				340A41961C2E2DF900839D67 /* PushViewController.m in Sources */,
 				340A417C1C2E2BDC00839D67 /* main.m in Sources */,

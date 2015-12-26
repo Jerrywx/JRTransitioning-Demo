@@ -18,7 +18,18 @@
     [super viewDidLoad];
 
 	self.view.backgroundColor = [UIColor orangeColor];
+	
+	UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 40, 60, 32)];
+	closeBtn.backgroundColor = [UIColor grayColor];
+	[closeBtn setTitle:@"CLOSE" forState:UIControlStateNormal];
+	[closeBtn addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:closeBtn];
 }
 
+- (void)close {
+	if ([self.delegate respondsToSelector:@selector(modalViewControllerDidClickedDismissButton:)]) {
+		[self.delegate modalViewControllerDidClickedDismissButton:self];
+	}
+}
 
 @end

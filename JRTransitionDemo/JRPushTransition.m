@@ -28,12 +28,7 @@
 	CGRect bounds = [[UIScreen mainScreen] bounds];
 	
 	toVc.view.frame = CGRectOffset(finalFrameForVc, 0, bounds.size.height);
-	
-	
-	
 	[[transitionContext containerView] addSubview:toVc.view];
-	
-	
 	[UIView animateWithDuration:[self transitionDuration:transitionContext]
 						  delay:0.0
 		 usingSpringWithDamping:0.5

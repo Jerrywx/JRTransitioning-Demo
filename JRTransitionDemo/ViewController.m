@@ -11,12 +11,18 @@
 #import "PresentViewController.h"
 #import "JRPushTransition.h"
 #import "JRPopTransition.h"
+#import "JRPresentAnimation.h"
+#import "JRDismissAnimation.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate,
-								UINavigationControllerDelegate>
+								UINavigationControllerDelegate, UIViewControllerTransitioningDelegate,
+								PresentViewControllerDelegate>
 @property (nonatomic, strong) UITableView			*tableView;
 @property (nonatomic, strong) JRPushTransition		*pushTransition;
 @property (nonatomic, strong) JRPopTransition		*popTransition;
+
+@property (nonatomic, strong) JRPresentAnimation	*presentAnimation;
+@property (nonatomic, strong) JRDismissAnimation	*dismissAnimateion;
 @end
 
 @implementation ViewController
@@ -61,29 +67,74 @@
 		[self.navigationController pushViewController:push animated:YES];
 	} else if (indexPath.row == 1) {
 		PresentViewController *present = [[PresentViewController alloc] init];
+		present.delegate = self;
+		present.transitioningDelegate = self;
+		present.modalPresentationStyle = UIModalPresentationCustom;
 		[self presentViewController:present animated:YES completion:nil];
 	}
 }
 
 #pragma mark - UInavigationControllerDelegate
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
-	NSLog(@"转场");
-	
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+								  animationControllerForOperation:(UINavigationControllerOperation)operation
+											   fromViewController:(UIViewController *)fromVC
+												 toViewController:(UIViewController *)toVC {
+
 	if (operation == UINavigationControllerOperationPush) {
 		return self.pushTransition;
 	} else  if (operation == UINavigationControllerOperationPop){
 		return self.popTransition;
 	}
-	
 	return nil;
 }
 
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+- (void)navigationController:(UINavigationController *)navigationController
+	  willShowViewController:(UIViewController *)viewController
+					animated:(BOOL)animated {
 	NSLog(@"will Show");
 }
 
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+- (void)navigationController:(UINavigationController *)navigationController
+	   didShowViewController:(UIViewController *)viewController
+					animated:(BOOL)animated {
 	NSLog(@"did Show");
+}
+
+#pragma mark - UIViewControllerTransitioningDelegate
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+																  presentingController:(UIViewController *)presenting
+																	  sourceController:(UIViewController *)source {
+	NSLog(@"------");
+	return self.presentAnimation;
+	return nil;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+	NSLog(@"inter Dismiss");
+	return self.dismissAnimateion;
+	return nil;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>)animator {
+	NSLog(@"present");
+	return nil;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+	NSLog(@"inter Dismiss");
+	return nil;
+}
+
+- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented
+													  presentingViewController:(UIViewController *)presenting
+														  sourceViewController:(UIViewController *)source {
+	NSLog(@"=======");
+	return nil;
+}
+
+#pragma mark - PresentViewControllerDelegate
+- (void)modalViewControllerDidClickedDismissButton:(PresentViewController *)viewController {
+	[viewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - 懒加载
@@ -101,6 +152,21 @@
 		return _popTransition;
 	}
 	return [[JRPopTransition alloc] init];
+}
+
+- (JRPresentAnimation *)presentAnimation {
+	if (_presentAnimation) {
+		return _presentAnimation;
+	}
+	
+	return _presentAnimation = [[JRPresentAnimation alloc] init];
+}
+
+- (JRDismissAnimation *)dismissAnimateion {
+	if (_dismissAnimateion) {
+		return _dismissAnimateion;
+	}
+	return _dismissAnimateion = [[JRDismissAnimation alloc] init];
 }
 
 @end

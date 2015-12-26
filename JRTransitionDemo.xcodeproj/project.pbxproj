@@ -17,6 +17,8 @@
 		340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41981C2E2E0700839D67 /* PresentViewController.m */; };
 		340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419B1C2E480A00839D67 /* JRPushTransition.m */; };
 		340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419E1C2E586400839D67 /* JRPopTransition.m */; };
+		340A41A21C2E94A800839D67 /* JRPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A11C2E94A800839D67 /* JRPresentAnimation.m */; };
+		340A41A51C2E951D00839D67 /* JRDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A41C2E951D00839D67 /* JRDismissAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		340A419B1C2E480A00839D67 /* JRPushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPushTransition.m; sourceTree = "<group>"; };
 		340A419D1C2E586400839D67 /* JRPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopTransition.h; sourceTree = "<group>"; };
 		340A419E1C2E586400839D67 /* JRPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopTransition.m; sourceTree = "<group>"; };
+		340A41A01C2E94A800839D67 /* JRPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPresentAnimation.h; sourceTree = "<group>"; };
+		340A41A11C2E94A800839D67 /* JRPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPresentAnimation.m; sourceTree = "<group>"; };
+		340A41A31C2E951D00839D67 /* JRDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDismissAnimation.h; sourceTree = "<group>"; };
+		340A41A41C2E951D00839D67 /* JRDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDismissAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 			children = (
 				340A41971C2E2E0700839D67 /* PresentViewController.h */,
 				340A41981C2E2E0700839D67 /* PresentViewController.m */,
+				340A41A01C2E94A800839D67 /* JRPresentAnimation.h */,
+				340A41A11C2E94A800839D67 /* JRPresentAnimation.m */,
+				340A41A31C2E951D00839D67 /* JRDismissAnimation.h */,
+				340A41A41C2E951D00839D67 /* JRDismissAnimation.m */,
 			);
 			name = PresentController;
 			sourceTree = "<group>";
@@ -197,9 +207,11 @@
 				340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */,
 				340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */,
 				340A41821C2E2BDC00839D67 /* ViewController.m in Sources */,
+				340A41A21C2E94A800839D67 /* JRPresentAnimation.m in Sources */,
 				340A417F1C2E2BDC00839D67 /* AppDelegate.m in Sources */,
 				340A41961C2E2DF900839D67 /* PushViewController.m in Sources */,
 				340A417C1C2E2BDC00839D67 /* main.m in Sources */,
+				340A41A51C2E951D00839D67 /* JRDismissAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

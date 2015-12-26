@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PresentViewController : UIViewController
+@class PresentViewController;
+@protocol PresentViewControllerDelegate <NSObject>
+-(void) modalViewControllerDidClickedDismissButton:(PresentViewController *)viewController;
+@end
 
+@interface PresentViewController : UIViewController
+@property (nonatomic, weak) id<PresentViewControllerDelegate> delegate;
 @end

@@ -16,6 +16,7 @@
 		340A41961C2E2DF900839D67 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41951C2E2DF900839D67 /* PushViewController.m */; };
 		340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41981C2E2E0700839D67 /* PresentViewController.m */; };
 		340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419B1C2E480A00839D67 /* JRPushTransition.m */; };
+		340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419E1C2E586400839D67 /* JRPopTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		340A41981C2E2E0700839D67 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
 		340A419A1C2E480A00839D67 /* JRPushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPushTransition.h; sourceTree = "<group>"; };
 		340A419B1C2E480A00839D67 /* JRPushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPushTransition.m; sourceTree = "<group>"; };
+		340A419D1C2E586400839D67 /* JRPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopTransition.h; sourceTree = "<group>"; };
+		340A419E1C2E586400839D67 /* JRPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				340A41951C2E2DF900839D67 /* PushViewController.m */,
 				340A419A1C2E480A00839D67 /* JRPushTransition.h */,
 				340A419B1C2E480A00839D67 /* JRPushTransition.m */,
+				340A419D1C2E586400839D67 /* JRPopTransition.h */,
+				340A419E1C2E586400839D67 /* JRPopTransition.m */,
 			);
 			name = PushController;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			files = (
 				340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */,
 				340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */,
+				340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */,
 				340A41821C2E2BDC00839D67 /* ViewController.m in Sources */,
 				340A417F1C2E2BDC00839D67 /* AppDelegate.m in Sources */,
 				340A41961C2E2DF900839D67 /* PushViewController.m in Sources */,
@@ -344,6 +350,7 @@
 				340A41901C2E2BDC00839D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

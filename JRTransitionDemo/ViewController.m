@@ -9,10 +9,14 @@
 #import "ViewController.h"
 #import "PushViewController.h"
 #import "PresentViewController.h"
+#import "JRPushTransition.h"
+#import "JRPopTransition.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate,
 								UINavigationControllerDelegate>
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITableView			*tableView;
+@property (nonatomic, strong) JRPushTransition		*pushTransition;
+@property (nonatomic, strong) JRPopTransition		*popTransition;
 @end
 
 @implementation ViewController
@@ -64,6 +68,13 @@
 #pragma mark - UInavigationControllerDelegate
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
 	NSLog(@"转场");
+	
+	if (operation == UINavigationControllerOperationPush) {
+		return self.pushTransition;
+	} else  if (operation == UINavigationControllerOperationPop){
+		return self.popTransition;
+	}
+	
 	return nil;
 }
 
@@ -73,6 +84,23 @@
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
 	NSLog(@"did Show");
+}
+
+#pragma mark - 懒加载
+- (JRPushTransition *)pushTransition {
+	
+	if (_pushTransition) {
+		return _pushTransition;
+	}
+	_pushTransition = [[JRPushTransition alloc] init];
+	return _pushTransition;
+}
+
+- (JRPopTransition *)popTransition {
+	if (_popTransition) {
+		return _popTransition;
+	}
+	return [[JRPopTransition alloc] init];
 }
 
 @end

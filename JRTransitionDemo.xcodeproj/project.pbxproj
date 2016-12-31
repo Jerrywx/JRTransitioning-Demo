@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		340A417C1C2E2BDC00839D67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A417B1C2E2BDC00839D67 /* main.m */; };
 		340A417F1C2E2BDC00839D67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A417E1C2E2BDC00839D67 /* AppDelegate.m */; };
-		340A41821C2E2BDC00839D67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41811C2E2BDC00839D67 /* ViewController.m */; };
 		340A41851C2E2BDC00839D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340A41831C2E2BDC00839D67 /* Main.storyboard */; };
 		340A41871C2E2BDC00839D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340A41861C2E2BDC00839D67 /* Assets.xcassets */; };
 		340A418A1C2E2BDC00839D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340A41881C2E2BDC00839D67 /* LaunchScreen.storyboard */; };
-		340A41961C2E2DF900839D67 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41951C2E2DF900839D67 /* PushViewController.m */; };
-		340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41981C2E2E0700839D67 /* PresentViewController.m */; };
-		340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419B1C2E480A00839D67 /* JRPushTransition.m */; };
-		340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A419E1C2E586400839D67 /* JRPopTransition.m */; };
-		340A41A21C2E94A800839D67 /* JRPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A11C2E94A800839D67 /* JRPresentAnimation.m */; };
-		340A41A51C2E951D00839D67 /* JRDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A41C2E951D00839D67 /* JRDismissAnimation.m */; };
-		340A41A81C2EC04600839D67 /* JRInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41A71C2EC04600839D67 /* JRInteractiveTransition.m */; };
-		340A41AB1C2ED2AD00839D67 /* JRPopInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41AA1C2ED2AD00839D67 /* JRPopInteractiveTransition.m */; };
+		C472BC7C1E17F27200C57706 /* JRDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC6A1E17F27200C57706 /* JRDismissAnimation.m */; };
+		C472BC7D1E17F27200C57706 /* JRInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC6C1E17F27200C57706 /* JRInteractiveTransition.m */; };
+		C472BC7E1E17F27200C57706 /* JRPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC6E1E17F27200C57706 /* JRPresentAnimation.m */; };
+		C472BC7F1E17F27200C57706 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC701E17F27200C57706 /* PresentViewController.m */; };
+		C472BC801E17F27200C57706 /* JRPopInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC731E17F27200C57706 /* JRPopInteractiveTransition.m */; };
+		C472BC811E17F27200C57706 /* JRPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC751E17F27200C57706 /* JRPopTransition.m */; };
+		C472BC821E17F27200C57706 /* JRPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC771E17F27200C57706 /* JRPushTransition.m */; };
+		C472BC831E17F27200C57706 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC791E17F27200C57706 /* PushViewController.m */; };
+		C472BC841E17F27200C57706 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C472BC7B1E17F27200C57706 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,28 +28,28 @@
 		340A417B1C2E2BDC00839D67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		340A417D1C2E2BDC00839D67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		340A417E1C2E2BDC00839D67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		340A41801C2E2BDC00839D67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		340A41811C2E2BDC00839D67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		340A41841C2E2BDC00839D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		340A41861C2E2BDC00839D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		340A41891C2E2BDC00839D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		340A418B1C2E2BDC00839D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		340A41941C2E2DF900839D67 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
-		340A41951C2E2DF900839D67 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
-		340A41971C2E2E0700839D67 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
-		340A41981C2E2E0700839D67 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
-		340A419A1C2E480A00839D67 /* JRPushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPushTransition.h; sourceTree = "<group>"; };
-		340A419B1C2E480A00839D67 /* JRPushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPushTransition.m; sourceTree = "<group>"; };
-		340A419D1C2E586400839D67 /* JRPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopTransition.h; sourceTree = "<group>"; };
-		340A419E1C2E586400839D67 /* JRPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopTransition.m; sourceTree = "<group>"; };
-		340A41A01C2E94A800839D67 /* JRPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPresentAnimation.h; sourceTree = "<group>"; };
-		340A41A11C2E94A800839D67 /* JRPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPresentAnimation.m; sourceTree = "<group>"; };
-		340A41A31C2E951D00839D67 /* JRDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDismissAnimation.h; sourceTree = "<group>"; };
-		340A41A41C2E951D00839D67 /* JRDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDismissAnimation.m; sourceTree = "<group>"; };
-		340A41A61C2EC04600839D67 /* JRInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRInteractiveTransition.h; sourceTree = "<group>"; };
-		340A41A71C2EC04600839D67 /* JRInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRInteractiveTransition.m; sourceTree = "<group>"; };
-		340A41A91C2ED2AD00839D67 /* JRPopInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopInteractiveTransition.h; sourceTree = "<group>"; };
-		340A41AA1C2ED2AD00839D67 /* JRPopInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopInteractiveTransition.m; sourceTree = "<group>"; };
+		C472BC691E17F27200C57706 /* JRDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDismissAnimation.h; sourceTree = "<group>"; };
+		C472BC6A1E17F27200C57706 /* JRDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDismissAnimation.m; sourceTree = "<group>"; };
+		C472BC6B1E17F27200C57706 /* JRInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRInteractiveTransition.h; sourceTree = "<group>"; };
+		C472BC6C1E17F27200C57706 /* JRInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRInteractiveTransition.m; sourceTree = "<group>"; };
+		C472BC6D1E17F27200C57706 /* JRPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPresentAnimation.h; sourceTree = "<group>"; };
+		C472BC6E1E17F27200C57706 /* JRPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPresentAnimation.m; sourceTree = "<group>"; };
+		C472BC6F1E17F27200C57706 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		C472BC701E17F27200C57706 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		C472BC721E17F27200C57706 /* JRPopInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopInteractiveTransition.h; sourceTree = "<group>"; };
+		C472BC731E17F27200C57706 /* JRPopInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopInteractiveTransition.m; sourceTree = "<group>"; };
+		C472BC741E17F27200C57706 /* JRPopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPopTransition.h; sourceTree = "<group>"; };
+		C472BC751E17F27200C57706 /* JRPopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPopTransition.m; sourceTree = "<group>"; };
+		C472BC761E17F27200C57706 /* JRPushTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPushTransition.h; sourceTree = "<group>"; };
+		C472BC771E17F27200C57706 /* JRPushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPushTransition.m; sourceTree = "<group>"; };
+		C472BC781E17F27200C57706 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		C472BC791E17F27200C57706 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		C472BC7A1E17F27200C57706 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C472BC7B1E17F27200C57706 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +82,9 @@
 		340A41791C2E2BDC00839D67 /* JRTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				340A41911C2E2DAF00839D67 /* Classes */,
-				340A41921C2E2DC000839D67 /* PushController */,
-				340A41931C2E2DCE00839D67 /* PresentController */,
+				340A417D1C2E2BDC00839D67 /* AppDelegate.h */,
+				340A417E1C2E2BDC00839D67 /* AppDelegate.m */,
+				C472BC671E17F27200C57706 /* Classes */,
 				340A417A1C2E2BDC00839D67 /* Supporting Files */,
 			);
 			path = JRTransitionDemo;
@@ -102,45 +102,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		340A41911C2E2DAF00839D67 /* Classes */ = {
+		C472BC671E17F27200C57706 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				340A417D1C2E2BDC00839D67 /* AppDelegate.h */,
-				340A417E1C2E2BDC00839D67 /* AppDelegate.m */,
-				340A41801C2E2BDC00839D67 /* ViewController.h */,
-				340A41811C2E2BDC00839D67 /* ViewController.m */,
+				C472BC7A1E17F27200C57706 /* ViewController.h */,
+				C472BC7B1E17F27200C57706 /* ViewController.m */,
+				C472BC681E17F27200C57706 /* PresentController */,
+				C472BC711E17F27200C57706 /* PushController */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		340A41921C2E2DC000839D67 /* PushController */ = {
+		C472BC681E17F27200C57706 /* PresentController */ = {
 			isa = PBXGroup;
 			children = (
-				340A41941C2E2DF900839D67 /* PushViewController.h */,
-				340A41951C2E2DF900839D67 /* PushViewController.m */,
-				340A419A1C2E480A00839D67 /* JRPushTransition.h */,
-				340A419B1C2E480A00839D67 /* JRPushTransition.m */,
-				340A419D1C2E586400839D67 /* JRPopTransition.h */,
-				340A419E1C2E586400839D67 /* JRPopTransition.m */,
-				340A41A91C2ED2AD00839D67 /* JRPopInteractiveTransition.h */,
-				340A41AA1C2ED2AD00839D67 /* JRPopInteractiveTransition.m */,
+				C472BC691E17F27200C57706 /* JRDismissAnimation.h */,
+				C472BC6A1E17F27200C57706 /* JRDismissAnimation.m */,
+				C472BC6B1E17F27200C57706 /* JRInteractiveTransition.h */,
+				C472BC6C1E17F27200C57706 /* JRInteractiveTransition.m */,
+				C472BC6D1E17F27200C57706 /* JRPresentAnimation.h */,
+				C472BC6E1E17F27200C57706 /* JRPresentAnimation.m */,
+				C472BC6F1E17F27200C57706 /* PresentViewController.h */,
+				C472BC701E17F27200C57706 /* PresentViewController.m */,
 			);
-			name = PushController;
+			path = PresentController;
 			sourceTree = "<group>";
 		};
-		340A41931C2E2DCE00839D67 /* PresentController */ = {
+		C472BC711E17F27200C57706 /* PushController */ = {
 			isa = PBXGroup;
 			children = (
-				340A41971C2E2E0700839D67 /* PresentViewController.h */,
-				340A41981C2E2E0700839D67 /* PresentViewController.m */,
-				340A41A01C2E94A800839D67 /* JRPresentAnimation.h */,
-				340A41A11C2E94A800839D67 /* JRPresentAnimation.m */,
-				340A41A31C2E951D00839D67 /* JRDismissAnimation.h */,
-				340A41A41C2E951D00839D67 /* JRDismissAnimation.m */,
-				340A41A61C2EC04600839D67 /* JRInteractiveTransition.h */,
-				340A41A71C2EC04600839D67 /* JRInteractiveTransition.m */,
+				C472BC721E17F27200C57706 /* JRPopInteractiveTransition.h */,
+				C472BC731E17F27200C57706 /* JRPopInteractiveTransition.m */,
+				C472BC741E17F27200C57706 /* JRPopTransition.h */,
+				C472BC751E17F27200C57706 /* JRPopTransition.m */,
+				C472BC761E17F27200C57706 /* JRPushTransition.h */,
+				C472BC771E17F27200C57706 /* JRPushTransition.m */,
+				C472BC781E17F27200C57706 /* PushViewController.h */,
+				C472BC791E17F27200C57706 /* PushViewController.m */,
 			);
-			name = PresentController;
+			path = PushController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,17 +213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340A419C1C2E480A00839D67 /* JRPushTransition.m in Sources */,
-				340A41991C2E2E0700839D67 /* PresentViewController.m in Sources */,
-				340A419F1C2E586400839D67 /* JRPopTransition.m in Sources */,
-				340A41821C2E2BDC00839D67 /* ViewController.m in Sources */,
-				340A41A21C2E94A800839D67 /* JRPresentAnimation.m in Sources */,
-				340A41A81C2EC04600839D67 /* JRInteractiveTransition.m in Sources */,
-				340A41AB1C2ED2AD00839D67 /* JRPopInteractiveTransition.m in Sources */,
+				C472BC821E17F27200C57706 /* JRPushTransition.m in Sources */,
+				C472BC801E17F27200C57706 /* JRPopInteractiveTransition.m in Sources */,
 				340A417F1C2E2BDC00839D67 /* AppDelegate.m in Sources */,
-				340A41961C2E2DF900839D67 /* PushViewController.m in Sources */,
+				C472BC811E17F27200C57706 /* JRPopTransition.m in Sources */,
+				C472BC7D1E17F27200C57706 /* JRInteractiveTransition.m in Sources */,
+				C472BC841E17F27200C57706 /* ViewController.m in Sources */,
+				C472BC7F1E17F27200C57706 /* PresentViewController.m in Sources */,
+				C472BC831E17F27200C57706 /* PushViewController.m in Sources */,
 				340A417C1C2E2BDC00839D67 /* main.m in Sources */,
-				340A41A51C2E951D00839D67 /* JRDismissAnimation.m in Sources */,
+				C472BC7E1E17F27200C57706 /* JRPresentAnimation.m in Sources */,
+				C472BC7C1E17F27200C57706 /* JRDismissAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
